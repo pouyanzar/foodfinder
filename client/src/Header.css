@@ -1,0 +1,101 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/Images/background-board-chillies-1435895.jpg);
+  background-size: cover;
+}
+
+.header__title {
+  color: #eeff00;
+  font-size: 8vw;
+  margin-left: 2.5rem;
+}
+
+.header__title .container {
+  letter-spacing: 3px;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 6vw;
+}
+
+.header__search .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__search .links a {
+  text-decoration: none;
+  margin: 2rem;
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 1rem;
+}
+
+.search-form__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.search-form__bar input {
+  border: 2px solid darkorange;
+  width: 50vw;
+  height: 5vh;
+}
+
+.search-form__bar button {
+  background: darkorange;
+  border: none;
+  height: 6vh;
+  width: 22vw;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.search-option {
+  width: 40%;
+  margin: auto;
+}
+
+.iframePopup {
+  width: 100%;
+  height: 100%;
+}
+
+.iframePopup iframe {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,86 @@
+$header-direction:column;
+
+.header{
+    display:flex;
+    flex-direction: $header-direction;
+    background-image: url(/Images/background-board-chillies-1435895.jpg);
+    background-size: cover;
+
+    &__title{    
+        color: #eeff00;
+        font-size: 8vw;
+        margin-left: 2.5rem;
+
+        .container{
+            letter-spacing:3px;
+        }
+        
+    }
+
+    &__search{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        font-size: 6vw;
+
+        .links{
+            display: flex;
+            justify-content: flex-end;
+            
+            & a{
+                text-decoration: none;
+                margin:2rem;
+
+            }
+            .upload{
+            }
+        }
+    }
+
+}
+
+.search{
+    &-form{
+        display: flex;
+        justify-content: flex-end;
+        margin: 1rem;
+        
+        &__bar{
+            display: flex;
+            align-items: flex-end;
+
+            & input{
+                border: 2px solid darkorange;
+                width: 50vw;
+                height:5vh;
+
+            }
+
+            & button{
+                background: darkorange;
+                border: none;
+                height: 6vh;
+                width: 22vw;
+                padding: 0 0.5rem;
+                font-weight: bold;
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+    &-option{
+        width: 40%;
+        margin:auto;
+    }
+}
+
+.iframePopup{
+    width: 100%;
+    height: 100%;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
