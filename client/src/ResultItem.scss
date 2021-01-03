@@ -3,7 +3,6 @@ $info-margin:.4em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // background: repeating-linear-gradient(#a9a9a9 50vh, #10dd32f1 50vh);
     background-color: rgb(245, 244, 244);
 }
 
@@ -13,14 +12,23 @@ $info-margin:.4em;
     margin: 1rem 2rem;
     border:2px solid black;
     border-radius: 40px;
-    background-color:#dd9210;
-
+    background-color: lightgoldenrodyellow;
+    width: 50vw;
+    color: coral;
     &__title{
         margin: $info-margin 0;
+        font-size: 2.5rem;
     }
 
     &__publisher{
         margin: $info-margin 0;
+        color: #000000;
+        font-size: 1.5rem;
+        span{
+            margin-left: 1rem;
+            font-size: 1.5rem;
+            color: blueviolet;
+        }
     }
 
     &__social{
@@ -28,7 +36,7 @@ $info-margin:.4em;
     }
 
     &__image{
-        width: 85%;
+        width: 50%;
         height:50vh;
         object-fit: cover;
         border-radius: 40px;
@@ -36,6 +44,7 @@ $info-margin:.4em;
 
     &__button{
         background-color: red;
+        width: 10vw;
         border-radius: 30px;
         padding: 0.5rem;
         margin: 1rem;
@@ -43,18 +52,4 @@ $info-margin:.4em;
         color: aliceblue;
         font-weight: bold;      
     }
-}
-.popup-content{
-    width:50%;
-    height:auto;
-    .iframePopup{
-        width:500%;
-        height:100vh;
-    }
-}
-
-.ingredientPopup{
-    width:100%;
-    height:50vh; 
-    overflow-y: scroll;
 }

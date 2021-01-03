@@ -3,8 +3,9 @@ $header-direction:column;
 .header{
     display:flex;
     flex-direction: $header-direction;
-    background-image: url(/Images/background-board-chillies-1435895.jpg);
+    background-image: url(./background.jpg);
     background-size: cover;
+    align-items: center;
 
     &__title{    
         color: #eeff00;
@@ -32,8 +33,7 @@ $header-direction:column;
                 margin:2rem;
 
             }
-            .upload{
-            }
+           
         }
     }
 
@@ -44,7 +44,7 @@ $header-direction:column;
         display: flex;
         justify-content: flex-end;
         margin: 1rem;
-        
+
         &__bar{
             display: flex;
             align-items: flex-end;
@@ -52,14 +52,14 @@ $header-direction:column;
             & input{
                 border: 2px solid darkorange;
                 width: 50vw;
-                height:5vh;
+                min-height:27px;
 
             }
 
             & button{
                 background: darkorange;
                 border: none;
-                height: 6vh;
+                min-height: 33px;
                 width: 22vw;
                 padding: 0 0.5rem;
                 font-weight: bold;
@@ -71,15 +71,6 @@ $header-direction:column;
     &-option{
         width: 40%;
         margin:auto;
-    }
-}
-
-.iframePopup{
-    width: 100%;
-    height: 100%;
-    iframe{
-        width: 100%;
-        height: 100%;
     }
 }
 
