@@ -1,0 +1,56 @@
+$info-margin:.4em;
+.results-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(245, 244, 244);
+}
+
+.result{
+    padding-top:1rem;
+    margin: 1rem 2rem;
+    border:2px solid black;
+    border-radius: 40px;
+    background-color: lightgoldenrodyellow;
+    width: 40vw;
+    min-width: 310px;
+    color: coral;
+    &__title{
+        margin: $info-margin 0;
+        font-size: 2em;
+    }
+
+    &__publisher{
+        margin: $info-margin 0;
+        color: #000000;
+        font-size: 1.5rem;
+        span{
+            margin-left: 1rem;
+            font-size: 1em;
+            color: blueviolet;
+        }
+    }
+
+    &__social{
+        margin: $info-margin 0;
+    }
+
+    &__image{
+        width: 300px;
+        height:300px;
+        object-fit: cover;
+        border-radius: 40px;
+    }
+
+    &__button{
+        background-color: red;
+        width: 10vw;
+        min-width: 100px;
+        border-radius: 30px;
+        padding: 0.5rem;
+        margin: 1rem;
+        border: white 2px solid;
+        color: aliceblue;
+        font-weight: bold;      
+    }
+}
