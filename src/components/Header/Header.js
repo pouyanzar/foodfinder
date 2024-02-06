@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./css/Header.css";
 import ResultItem from "../ResultItem/ResultItem";
+import dotenv from "dotenv";
+dotenv.config();
+
 export default function Header() {
   const baseURL = "https://api.edamam.com";
-  const api_key = "51c012775148e57fcc2f5da41fc1c75d";
-  const app_id = "507e29f3";
+  const api_key = process.env.API_KEY;
+  const app_id = process.env.APP_ID;
   const search = `/search`;
 
   const [recipes, setRecipes] = useState([]);
