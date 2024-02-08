@@ -5,7 +5,7 @@ import axios from "axios";
 export default function Header() {
   const [recipes, setRecipes] = useState([]);
   const [value, setValue] = useState("");
-  const url = "https://foodfinder-server.onrender.com:8000";
+  const url = "https://foodfinder-server.onrender.com";
 
   const changeHandler = (e) => {
     setValue(e.target.value);
