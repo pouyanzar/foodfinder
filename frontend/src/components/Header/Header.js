@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./css/Header.css";
 import ResultItem from "../ResultItem/ResultItem";
 import axios from "axios";
+import { SERVER_URL } from "../../config";
 export default function Header() {
   const [recipes, setRecipes] = useState([]);
   const [value, setValue] = useState("");
-  const url = "https://foodfinder-server.onrender.com";
+  const url = SERVER_URL;
 
   const changeHandler = (e) => {
     setValue(e.target.value);
