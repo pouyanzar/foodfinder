@@ -1,17 +1,11 @@
 import React, { useState } from "react";
 import "./css/Header.css";
 import ResultItem from "../ResultItem/ResultItem";
-import dotenv from "dotenv";
-dotenv.config();
-
+import axios from "axios";
 export default function Header() {
-  const baseURL = "https://api.edamam.com";
-  const api_key = process.env.API_KEY;
-  const app_id = process.env.APP_ID;
-  const search = `/search`;
-
   const [recipes, setRecipes] = useState([]);
   const [value, setValue] = useState("");
+  const url = "http://localhost:8000";
 
   const changeHandler = (e) => {
     setValue(e.target.value);
@@ -20,9 +14,9 @@ export default function Header() {
   const submitForm = (e) => {
     e.preventDefault();
 
-    fetch(`${baseURL}${search}?q=${value}&app_id=${app_id}&app_key=${api_key}`)
-      .then((res) => res.json())
-      .then((data) => setRecipes(data.hits));
+    axios
+      .post(url, {body:(value) })
+      .then((res) => setRecipes(res.data))
   };
 
   return (
