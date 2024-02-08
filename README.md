@@ -45,7 +45,7 @@ To run FoodFinder locally, follow these steps:
 
    ```bash
    # Install frontend dependencies
-   cd frontedn
+   cd frontend
    npm install
 
    # Install backend dependencies
@@ -64,8 +64,13 @@ To run FoodFinder locally, follow these steps:
 
    Replace `YOUR_EDAMAM_APP_ID` and `YOUR_EDAMAM_APP_KEY` with your actual Edamam API credentials.
    
-6. Replace the SERVER_URL value inside config.js by your server address
-7. Start the server and frontend separately:
+6. Configure server path on client side:
+   ```
+   cd frontend/src
+   ```
+   Replace the SERVER_URL value inside config.js by your server address
+   
+8. Start the server and frontend separately:
 
    ```bash
    # Start the server (from the server directory)
@@ -77,6 +82,6 @@ To run FoodFinder locally, follow these steps:
    npm start
    ```
 
-8. Access the application in your web browser:
+9. Access the application in your web browser:
 
    Open http://localhost:3000 in your web browser to view FoodFinder.
