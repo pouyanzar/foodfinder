@@ -5,7 +5,7 @@ import axios from "axios";
 export default function Header() {
   const [recipes, setRecipes] = useState([]);
   const [value, setValue] = useState("");
-  const url = "http://localhost:8000";
+  const url = "https://foodfinder-server.onrender.com:8000";
 
   const changeHandler = (e) => {
     setValue(e.target.value);
@@ -14,9 +14,7 @@ export default function Header() {
   const submitForm = (e) => {
     e.preventDefault();
 
-    axios
-      .post(url, {body:(value) })
-      .then((res) => setRecipes(res.data))
+    axios.post(url, { body: value }).then((res) => setRecipes(res.data));
   };
 
   return (
